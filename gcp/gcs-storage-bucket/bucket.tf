@@ -5,7 +5,7 @@ resource "google_storage_bucket" "storage_bucket" {
 
   #checkov:skip=CKV_GCP_78:Don't always want versioning on the bucket
 
-  name                        = var.prefix_bucket_name_with_project_id ? "${var.project}-${var.bucket_name}" : var.bucket_name
+  name                        = var.prefix_bucket_name_with_project_id ? "${var.bucket_name}" : var.bucket_name
   location                    = upper(var.region)
   storage_class               = var.bucket_storage_class
   uniform_bucket_level_access = true
