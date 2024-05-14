@@ -51,7 +51,7 @@ variable "function_trigger_type" {
 
 variable "function_trigger_resource" {
   type        = string
-  description = "The event trigger resource for the function, e.g. projects/pccw-dev/topics/tf-dev-stop-instance-event-topic"
+  description = "The event trigger resource for the function, e.g. projects/<project_name>/topics/tf-dev-stop-instance-event-topic"
 }
 
 

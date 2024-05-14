@@ -23,10 +23,10 @@ inputs = {
   function_use = "StartInstance"
   function_name    = "startInstancePubSub"
   function_runtime = "nodejs20"
-  function_source_bucket = "pccw-dev-gcf-sources-asia-east1"
+  function_source_bucket = "<project_name>-gcf-sources-asia-east1"
   function_source_object = "startInstancePubSub.zip"
   function_entry_point  = "startInstancePubSub"
   function_trigger_type = "google.pubsub.topic.publish"
-  function_trigger_resource = "projects/pccw-dev/topics/tf-dev-start-instance-event-topic"
+  function_trigger_resource = "projects/<project_name>/topics/tf-dev-start-instance-event-topic"
 }
 ```
